@@ -1,9 +1,11 @@
 {
     "name": "stupidly-ltd/sassy",
     "description": "Sassy CMS",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Stupidly\\Sassy\\": "packages/stupidly-ltd/sassy/src/"
+            "Stupidly\\Sassy\\": "src/"
         }
     },
     "authors": [
