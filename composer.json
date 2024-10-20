@@ -1,5 +1,5 @@
 {
-    "name": "stupidly/sassy",
+    "name": "stupidly-ltd/sassy",
     "description": "Sassy CMS",
     "autoload": {
         "psr-4": {
