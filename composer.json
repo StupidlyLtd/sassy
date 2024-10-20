@@ -3,7 +3,7 @@
     "description": "Sassy CMS",
     "autoload": {
         "psr-4": {
-            "Stupidly\\Sassy\\": "packages/stupidly/sassy/src/"
+            "Stupidly\\Sassy\\": "packages/stupidly-ltd/sassy/src/"
         }
     },
     "authors": [
