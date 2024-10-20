@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers":  [
-                "Stupidly\\Sassy\\App\\Providers\\SassyServiceProvider",
+                "Stupidly\\Sassy\\App\\Providers\\SassyServiceProvider"
             ]
         }
     }
