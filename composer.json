@@ -1,0 +1,23 @@
+{
+    "name": "stupidly/sassy",
+    "description": "Sassy CMS",
+    "autoload": {
+        "psr-4": {
+            "Stupidly\\Sassy\\": "packages/stupidly/sassy/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stupidly Sassy",
+            "email": "sassy@stupidly.uk"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers":  [
+                "Stupidly\\Sassy\\App\\Providers\\SassyServiceProvider",
+            ]
+        }
+    }
+}
