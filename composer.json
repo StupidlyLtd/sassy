@@ -13,6 +13,7 @@
         }
     ],
     "require": {},
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers":  [
