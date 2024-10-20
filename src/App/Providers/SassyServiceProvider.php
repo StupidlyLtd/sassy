@@ -3,6 +3,7 @@
 namespace Stupidly\Sassy\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Stupidly\Sassy\App\Services\SassyService;
 
 class SassyServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,10 @@ class SassyServiceProvider extends ServiceProvider
             __DIR__.'/../../Database/migrations' => database_path('migrations'),
         ], 'migrations');
         $this->loadMigrationsFrom(__DIR__.'/../../Database/migrations');
+
+        $this->app->singleton(SassyService::class, function () {
+            return new SassyService();
+        });
     }
 
     public function register()
