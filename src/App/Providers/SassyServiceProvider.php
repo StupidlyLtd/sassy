@@ -19,8 +19,11 @@ class SassyServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../Database/migrations' => database_path('migrations'),
         ], 'migrations');
+        $this->publishes([
+            __DIR__.'/../../stubs/block.stub' => base_path('stubs'),
+        ], 'stubs');
         $this->loadMigrationsFrom(__DIR__.'/../../Database/migrations');
-
+        $this->loadRoutesFrom(__DIR__.'/../../routes');
         $this->app->singleton(SassyService::class, function () {
             return new SassyService();
         });

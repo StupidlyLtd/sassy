@@ -7,17 +7,13 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Page extends Model
+class Post extends Model
 {
     use HasFactory, HasUuids, SoftDeletes;
 
     protected $fillable = [
         'slug',
-        'title'
+        'title',
+        'content'
     ];
-
-    public function sections()
-    {
-        return $this->hasMany(Section::class);
-    }
 }

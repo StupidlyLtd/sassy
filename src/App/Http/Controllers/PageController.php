@@ -12,7 +12,7 @@ class PageController extends Controller
         $page->load(['sections']);
         $page->sections->each(function($section) {
              if($section->posts > 0)
-                $section->section_posts = Post::query()->paginate($section->posts);
+                $section->section_posts = \Stupidly\Sassy\App\Models\Post::query()->paginate($section->posts);
         });
 
         return Inertia::render('Page/Show', [
