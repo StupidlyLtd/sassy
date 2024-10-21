@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Stupidly\Sassy\App\Http\Controllers\Admin\PageController;
+use Stupidly\Sassy\App\Http\Controllers\PageController;
 use Stupidly\Sassy\App\Http\Middleware\IsAdmin;
 use Stupidly\Sassy\App\Http\Controllers\Admin\AdminController;
 
