@@ -1,6 +1,6 @@
 <?php
 
-namespace Stupidly\Sassy\App\Http\Controllers\Admin;
+namespace Stupidly\Sassy\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
