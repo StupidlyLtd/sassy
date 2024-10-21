@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class IsAdmin
+class IsSassyAdmin
 {
     /**
      * Handle an incoming request.
@@ -15,7 +15,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(function_exists($request->user()->isSassyAdmin()) && $request->user()->isSassyAdmin())
+        if($request->user() && function_exists($request->user()->isSassyAdmin()) && $request->user()->isSassyAdmin())
             return $next($request);
 
         return redirect('/');
