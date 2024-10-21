@@ -14,7 +14,10 @@
             "email": "sassy@stupidly.uk"
         }
     ],
-    "require": {},
+    "require": {
+        "inertiajs/inertia-laravel": "^1.0",
+        "laravel/jetstream": "^5.3"
+    },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
