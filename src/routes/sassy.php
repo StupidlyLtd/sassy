@@ -5,7 +5,7 @@ use Stupidly\Sassy\App\Http\Controllers\PageController;
 use Stupidly\Sassy\App\Http\Middleware\IsSassyAdmin;
 use Stupidly\Sassy\App\Http\Controllers\Admin\AdminController;
 
-Route::prefix('admin')->name(value: 'admin.')->middleware(IsSassyAdmin::class)->group(function() {
+Route::prefix('admin')->name('admin.')->middleware([IsSassyAdmin::class])->group(function() {
 
     Route::get('/', [AdminController::class, 'index'])->name('index');
 
