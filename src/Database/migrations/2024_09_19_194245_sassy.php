@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create(config('sassy.tables.Page'), function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
             $table->string('title');
             $table->string('slug')->unique();
 
@@ -23,13 +23,13 @@ return new class extends Migration
         });
 
         Schema::create(config('sassy.tables.Post'), function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
 
             $table->timestamps();
             $table->softDeletes();
         });
 
-        Schema::create(\Stupidly\Sassy\App\Models\config('sassy.tables.Section'), function (Blueprint $table) {
+        Schema::create(config('sassy.tables.Section'), function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('block');
             $table->foreignUuid('page_id')->constrained();
