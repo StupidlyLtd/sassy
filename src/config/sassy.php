@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'admin' => 'sassy',
     'tables' => [
         //  'Model' => 'table_name'
         //  Best not to alter these unless you know what you are doing :)
