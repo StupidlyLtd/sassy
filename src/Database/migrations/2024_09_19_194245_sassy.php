@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(\Stupidly\Sassy\App\Models\config('sassy.tables.Page'), function (Blueprint $table) {
+        Schema::create(config('sassy.tables.Page'), function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->softDeletes();
         });
 
-        Schema::create(\Stupidly\Sassy\App\Models\config('sassy.tables.Post'), function (Blueprint $table) {
+        Schema::create(config('sassy.tables.Post'), function (Blueprint $table) {
             $table->id();
 
             $table->timestamps();
