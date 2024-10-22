@@ -5,9 +5,8 @@ namespace Stupidly\Sassy\App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Foundation\Configuration\Middleware;
 
-class IsSassyAdmin extends Middleware
+class IsSassyAdmin
 {
     /**
      * Handle an incoming request.
