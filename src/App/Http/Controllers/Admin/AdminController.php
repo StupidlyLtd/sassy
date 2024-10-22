@@ -10,6 +10,6 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return Inertia::render(base_path('vendor/stupid-ltd/sassy/Admin/Index'));
+        return Inertia::render(base_path(__DIR__.'../../../../resources/js/Pages/Admin/Index'));
     }
 }
